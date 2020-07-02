@@ -1,0 +1,87 @@
+.notify .note {
+  position: relative;
+  padding: 15px;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  background-color: #212121;
+  color: #ecf0f1;
+  font-family: Arial, sans-serif !important;
+  font-size: 14px !important;
+}
+.notify .note.note:hover {
+  background-color: #333333;
+}
+.notify .note:not(:last-child) {
+  margin-bottom: 10px;
+}
+.notify .note .image,
+.notify .note .remove {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  font-size: 24px;
+  color: #ecf0f1;
+}
+.notify .note .remove {
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: 0;
+}
+.notify .note .image {
+  text-align: center;
+  top: 10px;
+}
+.notify .note .content {
+  margin-right: 31px;
+}
+.notify .note .image + .remove + .content {
+  margin-left: 36px;
+}
+.notify .note .title {
+  margin-right: 5px;
+}
+.notify.notify-notes {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  width: 25%;
+}
+.notify.notify-notes .note {
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px #212121;
+}
+.notify.notify-notes .note:hover {
+  box-shadow: 0 0 0 3px #ecf0f1;
+}
+.notify.notify-notes .note:hover .remove {
+  display: block;
+}
+.notify.notify-notes .remove {
+  display: none;
+  font-size: 18px;
+}
+.notify.notify-notes .note,
+.notify.notify-notes .title {
+  display: block;
+}
+.notify.notify-notes .title {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.notify.notify-messages .note {
+  margin-bottom: 0;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .notify.notify-notes {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .notify.notify-notes {
+    width: 30%;
+  }
+}

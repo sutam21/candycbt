@@ -1,0 +1,82 @@
+*{font-family: 'Roboto', sans-serif;}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+
+.navs-slide
+{
+    position: fixed;
+	float:right;
+    top:115px;
+    right: -287px;
+    width: 287px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn-slide
+{
+    position: absolute;
+    top: 100px;
+    right: 287px;
+    float:right;
+    padding: 10px 15px 10px 10px;
+    background: #0003;
+    color: #8A8484;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.head-slide
+{
+    position: relative;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    font-weight:bold;
+    padding: 11px;
+    margin: 0;
+    background: #5115c2;
+    color: #FFF;
+    cursor: pointer;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.navs
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #CCC;
+    border-bottom-right-radius: 5px;
+}
+
+.navs li a
+{
+    display: block;
+    padding: 5px 0 5px 10px;
+}
+.navs li a:hover
+{
+    text-decoration: none;
+    background: #AAA;
+    color: #FFF;
+}
+.navs-body:last-child .navs li:last-child a
+{
+    border-bottom-right-radius: 5px;
+}

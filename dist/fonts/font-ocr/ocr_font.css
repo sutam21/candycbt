@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'OCR A Extended';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OCR A Extended'), url('OCRAEXT_2.woff') format('woff');
+}

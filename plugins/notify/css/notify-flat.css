@@ -1,0 +1,92 @@
+.notify .note {
+  position: relative;
+  padding: 15px;
+  background-color: #95a5a6;
+  color: #ecf0f1;
+  font-family: Arial, sans-serif !important;
+  font-size: 14px !important;
+}
+.notify .note.note:hover {
+  background-color: #7f8c8d;
+}
+.notify .note.note-success {
+  background-color: #2ecc71;
+}
+.notify .note.note-success:hover {
+  background-color: #27ae60;
+}
+.notify .note.note-info {
+  background-color: #3498db;
+}
+.notify .note.note-info:hover {
+  background-color: #2980b9;
+}
+.notify .note.note-warning {
+  background-color: #e67e22;
+}
+.notify .note.note-warning:hover {
+  background-color: #d35400;
+}
+.notify .note.note-danger {
+  background-color: #e74c3c;
+}
+.notify .note.note-danger:hover {
+  background-color: #c0392b;
+}
+.notify .note .image,
+.notify .note .remove {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #ecf0f1;
+}
+.notify .note .remove {
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  background: none;
+  border: 0;
+}
+.notify .note .image {
+  text-align: center;
+  top: 10px;
+}
+.notify .note .content {
+  margin-right: 31px;
+}
+.notify .note .image + .remove + .content {
+  margin-left: 36px;
+}
+.notify .note .title {
+  margin-right: 5px;
+}
+.notify.notify-notes {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  width: 25%;
+}
+.notify.notify-notes .note:not(:last-child) {
+  margin-bottom: 10px;
+}
+.notify.notify-notes .image {
+  top: auto;
+}
+.notify.notify-notes .title {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .notify.notify-notes {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .notify.notify-notes {
+    width: 30%;
+  }
+}

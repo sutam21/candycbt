@@ -1,0 +1,104 @@
+@text: #ecf0f1;
+
+@normal: #212121;
+@normal-hover: #333;
+
+.notify {
+	.note {
+		position: relative;
+			padding: 15px;
+		opacity: 0.8;
+			-moz-opacity: 0.8;
+		background-color: @normal; color: @text;
+		font-family: Arial, sans-serif !important;
+			font-size: 14px !important;
+
+		&.note:hover {
+			background-color: @normal-hover;
+		}
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.image,
+		.remove {
+			position: absolute;
+			width: 24px; height: 24px;
+				max-width: 24px; max-height: 24px;
+			font-size: 24px;
+			color: @text;
+		}
+			.remove {
+					top: 10px; right: 15px;
+				background: none;
+					border: 0;
+			}
+			.image {
+					text-align: center;
+				top: 10px;
+			}
+
+		.content {
+			margin-right: 31px;
+		}
+			.image + .remove + .content {
+				margin-left: 36px;
+			}
+			.title {
+				margin-right: 5px;
+			}
+	}
+
+	&.notify-notes {
+		position: absolute;
+			top: 10px; right: 10px;
+			z-index: 1001;
+		width: 25%;
+
+		.note {
+				border-radius: 10px;
+			box-shadow: 0 0 0 3px @normal;
+
+			&:hover {
+				box-shadow: 0 0 0 3px @text;
+
+				.remove {
+					display: block;
+				}
+			}
+			
+		}
+
+		.remove {
+				display: none;
+			font-size: 18px;
+		}
+
+		.note,
+		.title {
+			display: block;
+		}
+
+		.title {
+			margin-right: 0; margin-bottom: 10px;
+		}
+	}
+
+	&.notify-messages {
+		.note {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (min-width : 320px) and (max-width : 767px) {
+	.notify.notify-notes {
+		width: 50%;
+	}
+}
+
+@media (min-width : 768px) and (max-width : 1024px) {
+	.notify.notify-notes {
+		width: 30%;
+	}
+}

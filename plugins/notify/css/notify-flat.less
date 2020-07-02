@@ -1,0 +1,107 @@
+@normal: #95a5a6;
+@normal-hover: #7f8c8d;
+
+@success: #2ecc71;
+@success-hover: #27ae60;
+
+@info: #3498db;
+@info-hover: #2980b9;
+
+@warning: #e67e22;
+@warning-hover: #d35400;
+
+@danger: #e74c3c;
+@danger-hover: #c0392b;
+
+.notify {
+	.note {
+		position: relative;
+			padding: 15px;
+		background-color: @normal; color: #ecf0f1;
+		font-family: Arial, sans-serif !important;
+			font-size: 14px !important;
+
+		&.note:hover { background-color: @normal-hover; }
+		&.note-success {
+			background-color: @success;
+
+			&:hover { background-color: @success-hover; }
+		}
+		&.note-info {
+			background-color: @info;
+
+			&:hover { background-color: @info-hover; }
+		}
+		&.note-warning {
+			background-color: @warning;
+
+			&:hover { background-color: @warning-hover; }
+		}
+		&.note-danger {
+			background-color: @danger;
+
+			&:hover { background-color: @danger-hover; }
+		}
+
+		.image,
+		.remove {
+				position: absolute;
+			width: 24px; height: 24px;
+			font-size: 24px;
+			color: #ecf0f1;
+		}
+			.remove {
+					top: 10px; right: 15px;
+				font-size: 18px;
+				background: none;
+					border: 0;
+			}
+			.image {
+					text-align: center;
+				top: 10px;
+			}
+
+		.content {
+			margin-right: 31px;
+		}
+			.image + .remove + .content {
+				margin-left: 36px;
+			}
+			.title {
+				margin-right: 5px;
+			}
+	}
+
+	&.notify-notes {
+		position: absolute;
+			top: 10px; right: 10px;
+			z-index: 1001;
+		width: 25%;
+
+		.note:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.image {
+			top: auto;
+		}
+
+		.title {
+				display: block;
+			margin-right: 0; margin-bottom: 10px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media (min-width : 320px) and (max-width : 767px) {
+	.notify.notify-notes {
+		width: 50%;
+	}
+}
+
+@media (min-width : 768px) and (max-width : 1024px) {
+	.notify.notify-notes {
+		width: 30%;
+	}
+}

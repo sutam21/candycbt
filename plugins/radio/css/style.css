@@ -1,0 +1,89 @@
+
+
+.button-wrap {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  margin-top: -2.5em;
+}
+
+
+.button-label {
+  display: inline-block;
+  padding: 0px 15px;
+  margin: 1px;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 40px;
+  background: #efefef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height:40px;
+}
+.button-label h1 {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  margin-top: 11px;
+}
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+.button-label:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+
+
+#A:checked + .button-label {
+  background: #2ECC71;
+  color: #efefef;
+}
+#A:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+#B:checked + .button-label {
+  background: #2ECC71;
+  color: #efefef;
+}
+#B:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+#C:checked + .button-label {
+  background: #2ECC71;
+  color: #efefef;
+}
+#C:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+#D:checked + .button-label {
+  background: #2ECC71;
+  color: #efefef;
+}
+#D:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+#E:checked + .button-label {
+  background: #2ECC71;
+  color: #efefef;
+}
+#E:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+
+.hidden {
+  display: none;
+}

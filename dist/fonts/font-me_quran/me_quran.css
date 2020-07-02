@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'me_quran';
+    font-style: normal;
+    font-weight: normal;
+    src: local('me_quran'), url('me_quran.woff') format('woff');
+}
